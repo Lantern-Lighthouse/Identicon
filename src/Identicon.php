@@ -12,7 +12,7 @@ class Identicon
      * @param int $gridSize Density/detail of an avatar
      * @return bool|\GdImage|resource
      */
-    public static function generateFromString(string $string, int $size = 200, int $gridSize = 5): bool|GdImage|resource
+    public static function generateFromString(string $string, int $size = 200, int $gridSize = 5): bool|\GdImage|resource
     {
         $hash = md5($string);
 
